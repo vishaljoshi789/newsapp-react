@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
-import NewsItem from './NewsItem'
-
-export class News extends Component {
-    articles = [
+{
+    "status": "ok",
+    "totalResults": 38,
+    "articles": [
         {
             "source": {
                 "id": null,
@@ -264,25 +263,4 @@ export class News extends Component {
             "content": "Sonam Kapoor and Anand Ahuja have just welcomed their baby boy and the new parents are spending ample time with their newborn baby. Sonam made her first appearance after the birth of her child on a v… [+1444 chars]"
         }
     ]
-    constructor() {
-        super();
-        this.state = {
-            articles: this.articles,
-            loading: false
-        }
-    }
-    render() {
-        return (
-            <div className='container my-3'>
-                <h2>Top Headlines</h2>
-                <div className="row">
-                    <div className="col-md-4"><NewsItem /></div>
-                    <div className="col-md-4"><NewsItem /></div>
-                    <div className="col-md-4"><NewsItem /></div>
-                </div>
-            </div>
-        )
-    }
 }
-
-export default News
